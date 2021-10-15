@@ -80,7 +80,8 @@ class Navigation extends Component {
                 </a>
                 <a
                   href={
-                    "http://localhost:3000/user/" +
+                    process.env.REACT_APP_CLIENT_DOMAIN +
+                    "user/" +
                     this.props.user["http://localhost:3000/username"]
                   }
                   type="button"

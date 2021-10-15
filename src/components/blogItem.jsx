@@ -120,7 +120,11 @@ class BlogItem extends Component {
           <div className="f-left full-height">
             <div className="profile-picture-div user-info-picture">
               <a
-                href={"http://localhost:3000/user/" + this.props.blog.username}
+                href={
+                  process.env.REACT_APP_CLIENT_DOMAIN +
+                  "user/" +
+                  this.props.blog.username
+                }
               >
                 <img
                   id="profile-picture"
@@ -135,7 +139,8 @@ class BlogItem extends Component {
                 <a
                   className="username-link"
                   href={
-                    "http://localhost:3000/user/" +
+                    process.env.REACT_APP_CLIENT_DOMAIN +
+                    "user/" +
                     this.props.blog.user.username
                   }
                 >
@@ -153,7 +158,8 @@ class BlogItem extends Component {
         <div className="blog-post-mid truncate-text">
           <a
             href={
-              "http://localhost:3000/user/" +
+              process.env.REACT_APP_CLIENT_DOMAIN +
+              "user/" +
               this.props.blog.user.username +
               "/" +
               this.props.blog.url

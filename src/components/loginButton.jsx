@@ -7,7 +7,7 @@ function LoginButton() {
     <button
       className="navbar-button"
       onClick={() =>
-        loginWithRedirect({ redirectUri: "http://localhost:3000" })
+        loginWithRedirect({ redirectUri: process.env.REACT_APP_CLIENT_DOMAIN })
       }
     >
       Log in

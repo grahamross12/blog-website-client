@@ -28,7 +28,8 @@ class BlogSuggestions extends Component {
           <a
             className="blog-list-link"
             href={
-              "http://localhost:3000/user/" +
+              process.env.REACT_APP_CLIENT_DOMAIN +
+              "user/" +
               blog.user.username +
               "/" +
               blog.url
