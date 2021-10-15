@@ -84,6 +84,7 @@ class New extends React.Component {
       url: newUrl,
       tags: tagIds,
     };
+    console.log(blog);
     const apiUrl = process.env.REACT_APP_SERVER_DOMAIN + "/api/blogs";
     const response = await axios.post(apiUrl, blog);
     if (response.data) {
