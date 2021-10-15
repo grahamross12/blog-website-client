@@ -95,7 +95,6 @@ class BlogItem extends Component {
       this.props.blog.id +
       "/saves/" +
       this.state.saves;
-    console.log(apiUrl);
     await axios.put(apiUrl);
   };
 

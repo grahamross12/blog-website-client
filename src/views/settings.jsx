@@ -12,7 +12,6 @@ function Settings(props) {
   }
 
   function updatePicture(event) {
-    console.log(event.target.form[2].files[0]);
     setProfilePic(event.target.form[2].value);
   }
 

@@ -61,7 +61,6 @@ class New extends React.Component {
       this.setState({ noContent: true });
     }
     if (this.state.noTitle || this.state.noContent) {
-      console.log("returned");
       return;
     }
     const url = titleToUrl(title);
@@ -85,7 +84,6 @@ class New extends React.Component {
       url: newUrl,
       tags: tagIds,
     };
-    console.log(blog);
     const apiUrl = process.env.REACT_APP_SERVER_DOMAIN + "/api/blogs";
     const response = await axios.post(apiUrl, blog);
     if (response.data) {
@@ -144,7 +142,6 @@ class New extends React.Component {
 
   render() {
     if (this.state.redirect) {
-      console.log(this.props);
       this.props.history.push("/");
       return null;
     }

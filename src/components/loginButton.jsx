@@ -7,7 +7,9 @@ function LoginButton() {
     <button
       className="navbar-button"
       onClick={() =>
-        loginWithRedirect({ redirectUri: process.env.REACT_APP_CLIENT_DOMAIN })
+        loginWithRedirect({
+          redirectUri: process.env.REACT_APP_CLIENT_DOMAIN + "/callback",
+        })
       }
     >
       Log in
