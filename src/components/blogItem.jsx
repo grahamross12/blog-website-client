@@ -45,6 +45,7 @@ class BlogItem extends Component {
   activateSavedBlogs = async () => {
     if (this.props.user) {
       const username = this.props.user["http://localhost:3000/username"];
+      console.log(username);
       const userid = await this.findUserId(username);
       this.props.blog.savedBlogs.forEach((savedBlog) => {
         if (savedBlog.userid === userid) {
