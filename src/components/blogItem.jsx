@@ -71,7 +71,8 @@ class BlogItem extends Component {
         saveActive: !this.state.saveActive,
         saves: (this.state.saves += 1),
       });
-      process.env.REACT_APP_SERVER_DOMAIN +
+      const apiUrl =
+        process.env.REACT_APP_SERVER_DOMAIN +
         "/api/savedblogs/" +
         this.state.userid +
         "/" +
