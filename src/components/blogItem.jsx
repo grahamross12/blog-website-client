@@ -45,7 +45,6 @@ class BlogItem extends Component {
   activateSavedBlogs = async () => {
     if (this.props.user) {
       const username = this.props.user["http://localhost:3000/username"];
-      console.log(username);
       const userid = await this.findUserId(username);
       this.props.blog.savedBlogs.forEach((savedBlog) => {
         if (savedBlog.userid === userid) {
@@ -70,13 +69,14 @@ class BlogItem extends Component {
         saveActive: !this.state.saveActive,
         saves: (this.state.saves += 1),
       });
-      await axios.post(
+      const apiUrl =
         process.env.REACT_APP_SERVER_DOMAIN +
-          "/api/savedblogs/" +
-          this.props.blog.user.id +
-          "/" +
-          this.props.blog.id
-      );
+        "/api/savedblogs/" +
+        this.props.blog.user.id +
+        "/" +
+        this.props.blog.id;
+      console.log(apiUrl);
+      await axios.post(apiUrl);
     } else {
       this.setState({
         saveActive: !this.state.saveActive,
