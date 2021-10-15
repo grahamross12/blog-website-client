@@ -1,0 +1,140 @@
+#postFormDiv {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 100px);
+  padding-top: 0px;
+  margin-top: 15px;
+}
+
+.post-form {
+  display: flex;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 20px;
+  padding-bottom: 10px;
+  resize: vertical;
+}
+
+#title-input {
+  font-weight: 750;
+  font-size: 2.2rem;
+}
+
+.post-form-title {
+  display: flex;
+  font-weight: bold;
+  min-height: 80px;
+}
+
+#post-content {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  flex-direction: column;
+  overflow: clip;
+  text-overflow: clip;
+}
+
+.post-form-content {
+  flex-grow: 1;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.post-form-element {
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+  float: inline-end;
+  resize: vertical;
+}
+
+.line-break {
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+
+#form-publish-buttons {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#publish-button {
+  width: 120px;
+}
+
+#tag-select-div {
+  display: flex;
+  padding: 20px;
+  padding-top: 0px;
+  width: 100%;
+  flex-direction: row;
+}
+
+#tag-select-form {
+  width: 100%;
+  height: 40px;
+}
+
+.error-messages {
+  padding: 20px;
+  background-color: rgba(220, 24, 24, 0.1);
+}
+
+.error-title {
+  font-weight: 700;
+  color: rgb(182, 0, 0);
+}
+
+.tag {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgb(223, 223, 223);
+  background-color: rgb(223, 223, 223);
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.warning {
+  color: rgb(182, 0, 0);
+  margin-left: 5px;
+}
+
+#selected-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#select-div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 150px;
+}
+
+textarea {
+  width: 100%;
+  resize: none !important;
+}
+
+form,
+textarea:focus-visible,
+textarea,
+textarea:focus form:focus-visible {
+  resize: vertical;
+  border: none;
+  outline: none;
+}

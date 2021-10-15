@@ -1,0 +1,138 @@
+.contentWrapper {
+  height: 100%;
+}
+
+.suggestionsDiv {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgb(228, 228, 228);
+  margin-top: 10px;
+}
+
+.tagSuggestionsDiv {
+  background-color: rgb(248, 248, 248);
+  min-height: 200px;
+}
+
+.blogSuggestionsDiv {
+  background-color: rgb(248, 248, 248);
+  min-height: 200px;
+}
+
+.bottom-margin {
+  height: 10px;
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.list-divider {
+  margin: 0px;
+  color: rgb(147, 147, 147);
+}
+
+.rounded-div {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px lightgrey;
+  background-color: white;
+}
+
+.navbar-button {
+  outline: none;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 6px;
+  background-color: transparent;
+  padding: 8px;
+  color: #3b49df;
+  text-decoration: none;
+  transition: 0.2s;
+  margin-right: 10px;
+}
+
+.navbar-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-button-fill {
+  outline: none;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #3b49df;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbar-button-fill:hover {
+  color: white;
+  background-color: #323ebe;
+}
+
+.page-not-found-div {
+  margin: auto;
+  width: 800px;
+  margin-top: 30px;
+}
+
+.no-style {
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+
+.no-style:hover {
+  color: rgb(71, 71, 71);
+}
+
+#loading-div {
+  position: absolute;
+  width: 100px;
+  left: calc(50% - 50px);
+  width: 100px;
+  margin: auto;
+  bottom: 50vh;
+}
+
+.blog-list-item:hover {
+  background-color: white;
+}
+
+.blog-list-link {
+  text-decoration: none;
+  color: black;
+}
+
+.blog-list-link-div {
+  padding: 10px;
+  min-height: 60px;
+}
+
+.tag-menu-item-div {
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tag-menu-item:hover {
+  background-color: rgba(255, 230, 0, 0.75);
+}
+
+.tag-menu-item {
+  display: inline-block;
+  color: rgb(54, 54, 54);
+  background-color: rgba(255, 230, 0, 0.493);
+  border-radius: 10px;
+  box-shadow: 0 0 0 0px;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 8px;
+}

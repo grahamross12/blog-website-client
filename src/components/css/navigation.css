@@ -1,0 +1,141 @@
+#search-div-nav {
+  display: flex;
+  flex-basis: 0%;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px lightgrey;
+  background-color: white;
+}
+
+#search-icon:active,
+#search-icon:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+#search-icon-expander,
+#search-icon-expander:active,
+#search-icon-expander:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#search-div-nav:hover {
+  box-shadow: 0 0 0 1px rgb(158, 158, 158);
+}
+
+#accountDivNav {
+  display: flex;
+  float: right;
+  margin-left: auto;
+}
+
+#new-post-button {
+  width: 120px;
+}
+
+#search {
+  min-width: 300px;
+  border: none;
+  background-color: transparent;
+}
+
+#search:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.accountDivNav {
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.search-dropdown {
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: relative;
+  display: unset !important;
+  min-width: 250px !important;
+  transition: 0.15s ease-out;
+  right: 0px;
+  visibility: hidden;
+  opacity: 0;
+  top: 48px;
+}
+
+#create-account-button {
+  width: 140px;
+}
+
+#profile-picture-div:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.15s ease-in;
+}
+
+#profile-picture-div {
+  position: relative;
+  padding-top: 0px;
+  padding-left: 20px;
+  width: 52px;
+  padding-bottom: 8px;
+  margin-top: 3px;
+}
+
+#profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background-color: black;
+}
+
+.dropdown-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px) !important;
+  border-radius: 5px;
+}
+
+.f-right {
+  display: inline-flex;
+  float: right;
+}
+
+.navbar-button-margin {
+  margin-top: 8px;
+}
+
+.f-left {
+  display: inline-flex;
+  float: left;
+}
+
+.with-margin {
+  margin-top: 10px;
+}
+
+.dropdown-div {
+  position: relative;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover {
+  background-color: rgb(235, 235, 235) !important;
+  color: #4949aa !important;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown-menu {
+    position: absolute !important;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+  .dropdown-div {
+    position: unset !important;
+  }
+}
