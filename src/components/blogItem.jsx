@@ -11,6 +11,7 @@ class BlogItem extends Component {
     this.state = {
       saveActive: false,
       saves: this.props.blog.saves,
+      userid: null,
     };
   }
   convertDate = (datestring) => {
@@ -45,7 +46,8 @@ class BlogItem extends Component {
   activateSavedBlogs = async () => {
     if (this.props.user) {
       const username = this.props.user["http://localhost:3000/username"];
-      const userid = await this.findUserId(username);
+      userid = await this.findUserId(username);
+      this.setState({ userid: userid });
       this.props.blog.savedBlogs.forEach((savedBlog) => {
         if (savedBlog.userid === userid) {
           this.setState({ saveActive: true });
@@ -69,10 +71,9 @@ class BlogItem extends Component {
         saveActive: !this.state.saveActive,
         saves: (this.state.saves += 1),
       });
-      const apiUrl =
-        process.env.REACT_APP_SERVER_DOMAIN +
+      process.env.REACT_APP_SERVER_DOMAIN +
         "/api/savedblogs/" +
-        this.props.blog.user.id +
+        this.state.userid +
         "/" +
         this.props.blog.id;
       console.log(apiUrl);
