@@ -81,7 +81,7 @@ class Navigation extends Component {
                 <a
                   href={
                     process.env.REACT_APP_CLIENT_DOMAIN +
-                    "user/" +
+                    "/user/" +
                     this.props.user["http://localhost:3000/username"]
                   }
                   type="button"

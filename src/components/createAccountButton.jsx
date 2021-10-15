@@ -7,7 +7,7 @@ function CreateAccountButton() {
   async function createAccount() {
     await loginWithRedirect({
       screen_hint: "signup",
-      redirectUri: process.env.REACT_APP_CLIENT_DOMAIN + "callback",
+      redirectUri: process.env.REACT_APP_CLIENT_DOMAIN + "/callback",
     });
   }
   return (

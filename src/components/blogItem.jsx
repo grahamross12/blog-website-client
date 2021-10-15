@@ -122,7 +122,7 @@ class BlogItem extends Component {
               <a
                 href={
                   process.env.REACT_APP_CLIENT_DOMAIN +
-                  "user/" +
+                  "/user/" +
                   this.props.blog.username
                 }
               >
@@ -140,7 +140,7 @@ class BlogItem extends Component {
                   className="username-link"
                   href={
                     process.env.REACT_APP_CLIENT_DOMAIN +
-                    "user/" +
+                    "/user/" +
                     this.props.blog.user.username
                   }
                 >
@@ -159,7 +159,7 @@ class BlogItem extends Component {
           <a
             href={
               process.env.REACT_APP_CLIENT_DOMAIN +
-              "user/" +
+              "/user/" +
               this.props.blog.user.username +
               "/" +
               this.props.blog.url
